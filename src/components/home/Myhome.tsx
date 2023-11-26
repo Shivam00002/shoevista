@@ -1,21 +1,19 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { useState } from "react";
-import { BsArrowRight } from "react-icons/Bs";
-import { BoxData, PlateformImages, Solutions } from "./data/ImgData";
-
 import Link from "next/link";
+import { useState } from "react";
 import { Globe } from "./Globe";
 import { PlatformBox } from "./PlatformBox";
 import { SolutionsBox } from "./SolutionsBox";
 import { MethodBox } from "./MethodBox";
 import TextChange from "./TextChange";
+import { BsArrowRight } from "react-icons/Bs";
+import { BoxData, PlateformImages, Solutions } from "./data/ImgData";
 
 export const Myhome = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [showDropdown, setShowDropdown] = useState(false);
-
   const Platforms = ["MENS", "WOMENS", "KIDS", "ATHLETIC", "CASUAL"];
 
   const NavigationTab = [
@@ -87,7 +85,7 @@ export const Myhome = () => {
 
   return (
     <>
-      <div className="w-full px-4 md:h-[730px] h-[550px] relative ">
+      <div className="w-full px-4 md:h-[730px] mt-14 h-[550px] relative ">
         <div className="w-full md:flex justify-around items-center px-2 h-10  shadow-lg  hidden absolute z-10 left-0 top-0 ">
           {NavigationTab?.map(({ content, title }, index) => {
             return (
