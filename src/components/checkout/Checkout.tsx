@@ -6,7 +6,6 @@ import { PlatformBox } from "../home/PlatformBox";
 import { PlateformImages } from "../home/data/ImgData";
 
 export const Checkout = () => {
-  console.log("PlateformImages", PlateformImages);
   return (
     <>
       <div className="md:w-full mx-auto w-full h-full px-2 py-2  md:flex  gap-5">

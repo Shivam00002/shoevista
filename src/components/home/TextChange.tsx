@@ -22,7 +22,6 @@ const TextChange = () => {
     },
   ];
 
-  
   const handlePrevClick = () => {
     if (text > 0) {
       setText(text - 1);

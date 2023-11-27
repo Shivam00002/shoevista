@@ -1,4 +1,4 @@
-  export const ShoeData = [
+export const ShoeData = [
     {
         "cardType": "default",
         "cloudProductId": "07909022-e342-5a2e-9d59-1bb50c91f33f",

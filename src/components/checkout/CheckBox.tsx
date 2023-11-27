@@ -72,7 +72,7 @@ export const CheckBox = () => {
           Buy now
         </div>
         <div className="md:w-fit w-full px-8 py-2 mt-4 border text-green-900 rounded-sm text-[18px]  text-center cursor-pointer">
-     Add to cart
+          Add to cart
         </div>
       </div>
       <div className="mt-10 md:block hidden">

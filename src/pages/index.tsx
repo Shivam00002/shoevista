@@ -9,9 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-
       <div className="container  md:max-w-[80%] w-full mx-auto">
-      <Navbar/>
+        <Navbar />
         <Myhome />
         <Checkout />
       </div>

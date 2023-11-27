@@ -6,59 +6,57 @@ export const Globe = () => {
     <>
       <div className="w-full h-full         ">
         <div className="md:w-full w-full h-full mx-auto block  md:flex   md:py-10   ">
-        <div className="md:w-[50%] w-full  h-fit md:h-[480px] px-4 ">
-  <h2 className="md:text-[37px] text-[24px] text-[#3994ba] md:leading-[48px]  ">
-    Step into Style<br />
-    with Expert Guidance from<br />
-    <span className="text-[#3994ba]">
-      fashion enthusiasts
-    </span>{" "}
-  </h2>
-  <div>
-    <div className="flex md:w-fit w-full md:px-2 bg-[#bcedfd] rounded-2xl md:h-24 h-20 items-center   mt-4  justify-center md:py-6 md:mt-10">
-      <div className="border-r-2 border-white px-2 md:px-5 h-fit  ">
-        <h1 className="md:text-[27px] text-lg  text-[#3994ba] ">
-          1K
-        </h1>{" "}
-        <p className="md:text-[16px] text-sm text-[#3994ba]">
-          shoe styles
-        </p>{" "}
-      </div>
+          <div className="md:w-[50%] w-full  h-fit md:h-[480px] px-4 ">
+            <h2 className="md:text-[37px] text-[24px] text-[#3994ba] md:leading-[48px]  ">
+              Step into Style
+              <br />
+              with Expert Guidance from
+              <br />
+              <span className="text-[#3994ba]">fashion enthusiasts</span>{" "}
+            </h2>
+            <div>
+              <div className="flex md:w-fit w-full md:px-2 bg-[#bcedfd] rounded-2xl md:h-24 h-20 items-center   mt-4  justify-center md:py-6 md:mt-10">
+                <div className="border-r-2 border-white px-2 md:px-5 h-fit  ">
+                  <h1 className="md:text-[27px] text-lg  text-[#3994ba] ">
+                    1K
+                  </h1>{" "}
+                  <p className="md:text-[16px] text-sm text-[#3994ba]">
+                    shoe styles
+                  </p>{" "}
+                </div>
 
-      <div className="border-r-2 border-white px-2 md:px-5 h-fit  ">
-        <h1 className="md:text-[27px] text-lg  text-[#3994ba]">
-          500
-        </h1>{" "}
-        <p className="md:text-[16px] text-sm text-[#3994ba]">
-          shoe designers
-        </p>{" "}
-      </div>
+                <div className="border-r-2 border-white px-2 md:px-5 h-fit  ">
+                  <h1 className="md:text-[27px] text-lg  text-[#3994ba]">
+                    500
+                  </h1>{" "}
+                  <p className="md:text-[16px] text-sm text-[#3994ba]">
+                    shoe designers
+                  </p>{" "}
+                </div>
 
-      <div className="border-r-2 border-white px-2  md:px-5 h-fit  ">
-        <h1 className="md:text-[27px] text-lg  text-[#3994ba] ">
-          20
-        </h1>{" "}
-        <p className="md:text-[16px] text-sm text-[#3994ba]">
-          countries
-        </p>{" "}
-      </div>
-      <div className=" md:px-5 h-fit px-2   ">
-        <h1 className="md:text-[27px] text-lg  text-[#3994ba] ">
-          5K+
-        </h1>{" "}
-        <p className="md:text-[16px] text-sm text-[#3994ba] whitespace-pre">
-          happy feet
-        </p>{" "}
-      </div>
-    </div>
-  </div>
+                <div className="border-r-2 border-white px-2  md:px-5 h-fit  ">
+                  <h1 className="md:text-[27px] text-lg  text-[#3994ba] ">
+                    20
+                  </h1>{" "}
+                  <p className="md:text-[16px] text-sm text-[#3994ba]">
+                    countries
+                  </p>{" "}
+                </div>
+                <div className=" md:px-5 h-fit px-2   ">
+                  <h1 className="md:text-[27px] text-lg  text-[#3994ba] ">
+                    5K+
+                  </h1>{" "}
+                  <p className="md:text-[16px] text-sm text-[#3994ba] whitespace-pre">
+                    happy feet
+                  </p>{" "}
+                </div>
+              </div>
+            </div>
 
-  <div className="w-fit bg-[#3994ba] text-white px-6 py-3 md:mt-10  mt-4 rounded-full md:text-[17px] text-[14px]  cursor-pointer">
-    Find your perfect pair{" "}
-  </div>
-</div>
-
-
+            <div className="w-fit bg-[#3994ba] text-white px-6 py-3 md:mt-10  mt-4 rounded-full md:text-[17px] text-[14px]  cursor-pointer">
+              Find your perfect pair{" "}
+            </div>
+          </div>
 
           <div className=" md:w-[50%] relative   w-full  hidden    md:grid place-content-center ">
             <div className="relative w-full h-full z-20">
