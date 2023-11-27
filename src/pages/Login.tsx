@@ -34,7 +34,7 @@ const Login = () => {
     });
 
     return () => unsubscribe();
-  }, [router, setUser]);
+  }, [router]);
 
   const signInWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
@@ -57,10 +57,17 @@ const Login = () => {
   };
 
   return (
-    <div className="w-[300px] h-[500px] border text-center rounded-md">
+    <>
+    <div className=" grid place-content-center mx-auto h-screen">
+    <div className="w-[300px] border text-center px-2 py-2 rounded-md">
       <h2>Hello, Welcome!</h2>
       <button onClick={signInWithGoogle}>Sign in with Google</button>
     </div>
+    </div>
+ 
+    </>
+
+  
   );
 };
 

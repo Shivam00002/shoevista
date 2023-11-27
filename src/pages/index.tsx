@@ -3,17 +3,22 @@ import { Inter } from "next/font/google";
 import { Myhome } from "@/components/home/Myhome";
 import { Checkout } from "@/components/checkout/Checkout";
 import { Navbar } from "@/components/navbar/Navbar";
+import MyuseStore from "@/lib/zustand";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const user = MyuseStore((state) => state.user);
+
+
+  console.log("user" , user)
   return (
-    <>
+    <div className="">
       <div className="container  md:max-w-[80%] w-full mx-auto">
-        <Navbar />
+        <Navbar user={user} userName={user?.displayName} imgUrl={user?.photoURL} />
         <Myhome />
         <Checkout />
       </div>
-    </>
+    </div>
   );
 }
