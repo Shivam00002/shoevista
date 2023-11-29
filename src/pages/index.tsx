@@ -11,7 +11,7 @@ export default function Home() {
   const user = MyuseStore((state) => state.user);
 
 
-  console.log("user" , user)
+ 
   return (
     <div className="">
       <div className="container  md:max-w-[80%] w-full mx-auto">

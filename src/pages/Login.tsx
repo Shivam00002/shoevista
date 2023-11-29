@@ -4,6 +4,7 @@ import { auth } from "@/lib/firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useRouter } from "next/router";
 import MyuseStore from "../lib/zustand";
+import Image from "next/image";
 
 interface User {
   displayName: string | null;
@@ -59,9 +60,13 @@ const Login = () => {
   return (
     <>
     <div className=" grid place-content-center mx-auto h-screen">
-    <div className="w-[300px] border text-center px-2 py-2 rounded-md">
-      <h2>Hello, Welcome!</h2>
-      <button onClick={signInWithGoogle}>Sign in with Google</button>
+    <div className="w-[340px] border text-center px-2 py-2 rounded-md">
+      <h2 className="text-[#3994ba] md:text-[14px] whitespace-nowrap text-[12px]">Hello, Welcome! login here and explore ShoeVista</h2>
+      <div className="flex py-2 place-content-center mx-auto text-center items-center gap-2">
+        <Image src="https://iili.io/HU9BC74.png" alt="logo" width={20} height={20}/>
+        <button onClick={signInWithGoogle}>Sign in with Google</button>
+      </div>
+     
     </div>
     </div>
  

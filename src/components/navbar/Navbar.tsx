@@ -19,6 +19,7 @@ export const Navbar = ({ imgUrl, userName, user }: any) => {
     setLite(!lite);
   };
 
+
   const handleshowProfile = () => {
     showProfile(!profile);
   };
