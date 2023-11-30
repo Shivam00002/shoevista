@@ -1,8 +1,15 @@
+import { useCartStore } from "@/lib/zustand";
 import Image from "next/image";
 import React from "react";
 import { PiCurrencyInrBold } from "react-icons/pi";
 
 export const ShoeBox = ({ img, toptext, name, price }: any) => {
+ 
+
+  
+
+  
+
   return (
     <div className="w-full h-fit">
       <div className="w-full  h-[240px] md:h-[375px]  rounded-md relative ">
@@ -43,12 +50,12 @@ export const ShoeBox = ({ img, toptext, name, price }: any) => {
         </div>
 
         <div className="flex items-center gap-x-3">
-          <div className="md:w-[200px] whitespace-normal w-full  py-2  bg-[#3994ba] text-white rounded-md text-[15px]  text-center cursor-pointer">
+          <button className="md:w-[200px] whitespace-normal w-full  py-2  bg-[#3994ba] text-white rounded-md text-[15px]  text-center cursor-pointer">
             Buy now
-          </div>
-          <div className="md:w-[200px] w-full  py-2  border text-green-900 rounded-md text-[15px]  text-center cursor-pointer">
+          </button>
+          <button  className="md:w-[200px] w-full  py-2  border text-green-900 rounded-md text-[15px]  text-center cursor-pointer">
             Add to cart
-          </div>
+          </button>
         </div>
       </div>
     </div>

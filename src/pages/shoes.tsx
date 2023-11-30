@@ -21,7 +21,7 @@ const shoe = () => {
   <div className=" w-full grid md:grid-cols-4 grid-cols-2 mt-5 gap-3">
           {ShoeData?.map((el, index) => {
             return (
-              <Link href={"/shoes"}>
+              <div >
                 <ShoeBox
                   key={index}
                   img={el.images.portraitURL  }
@@ -29,7 +29,7 @@ const shoe = () => {
                   toptext="Saved upto 2k"
                   price={el.price.currentPrice}
                 />
-              </Link>
+              </div>
             );
           })}
         </div>
