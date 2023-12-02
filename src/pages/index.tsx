@@ -14,6 +14,7 @@ export default function Home() {
  
   return (
     <div className="">
+     
       <div className="container  md:max-w-[80%] w-full mx-auto">
         <Navbar user={user} userName={user?.displayName} imgUrl={user?.photoURL} />
         <Myhome />

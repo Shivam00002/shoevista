@@ -49,14 +49,7 @@ export const ShoeBox = ({ img, toptext, name, price }: any) => {
           <p className="text-gray-500">{price}</p>
         </div>
 
-        <div className="flex items-center gap-x-3">
-          <button className="md:w-[200px] whitespace-normal w-full  py-2  bg-[#3994ba] text-white rounded-md text-[15px]  text-center cursor-pointer">
-            Buy now
-          </button>
-          <button  className="md:w-[200px] w-full  py-2  border text-green-900 rounded-md text-[15px]  text-center cursor-pointer">
-            Add to cart
-          </button>
-        </div>
+      
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ export const Navbar = ({ imgUrl, userName, user }: any) => {
   return (
     <div className=" w-full   fixed z-50 top-0 left-0  border-b-2 ">
       <div className="md:w-[80%]  flex items-center justify-between mx-auto w-full  h-14   bg-white">
-        <h2 className="font-bold md:text-[20px]">ShoeVista</h2>
+        <Link href="/" className="font-bold md:text-[20px]">ShoeVista</Link>
 
         <div className="flex     px-2  items-center gap-5">
           {user && (
