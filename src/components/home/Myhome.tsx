@@ -10,7 +10,7 @@ import { MethodBox } from "./MethodBox";
 import TextChange from "./TextChange";
 
 import { BoxData, PlateformImages, Solutions } from "./data/ImgData";
-import { BsArrowRight } from "react-icons/Bs";
+// import { BsArrowRight } from "react-icons/Bs";
 
 export const Myhome = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -149,7 +149,7 @@ export const Myhome = () => {
               <p className="md:text-[14px] text-[12px] whitespace-nowrap">
                 Get started now{" "}
               </p>{" "}
-              <BsArrowRight color="black" />
+              {/* <BsArrowRight color="black" /> */}
             </div>
             <p className="md:text-[14px] text-[11px] cursor-pointer md:border-b-[1px] text-gray-500 mt-4 md:mt-8">
               Discover our removal solutinons
@@ -209,7 +209,7 @@ export const Myhome = () => {
               <p className="whitespace-nowrap md:text-[13px]  text-[12px] ">
                 Start now
               </p>{" "}
-              <BsArrowRight color="white" />
+              {/* <BsArrowRight color="white" /> */}
             </div>
           </div>
         </div>
@@ -238,7 +238,7 @@ export const Myhome = () => {
 
             <div className="w-fit cursor-pointer h-fit py-2 px-3 md:px-6 rounded-md mt-8 bg-[#54c1f0] hover:bg-[#54c1f0] flex items-center gap-2">
               <p className="md:text-[14px] text-[12px]">Shop Now</p>
-              <BsArrowRight color="black" />
+              {/* <BsArrowRight color="black" /> */}
             </div>
           </div>
         </div>
@@ -261,7 +261,7 @@ export const Myhome = () => {
               <p className="whitespace-nowrap md:text-[13px]  text-[12px] ">
                 Read more
               </p>{" "}
-              <BsArrowRight color="white" />
+              {/* <BsArrowRight color="white" /> */}
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@ export const Myhome = () => {
               <p className="whitespace-nowrap md:text-[13px]  text-[12px] ">
                 Read more
               </p>{" "}
-              <BsArrowRight color="white" />
+              {/* <BsArrowRight color="white" /> */}
             </div>
           </div>
         </div>
