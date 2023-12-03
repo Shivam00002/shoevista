@@ -4,6 +4,7 @@ import { Myhome } from "@/components/home/Myhome";
 import { Checkout } from "@/components/checkout/Checkout";
 import { Navbar } from "@/components/navbar/Navbar";
 import MyuseStore from "@/lib/zustand";
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ["latin"] });
 

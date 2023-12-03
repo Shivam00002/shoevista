@@ -1,19 +1,23 @@
-import { MethodBox } from "@/components/home/MethodBox";
-import { BoxData } from "@/components/home/data/ImgData";
+import { Toaster, toast } from "react-hot-toast";
+import React from "react";
+import { useCartStore } from "@/lib/zustand";
+import MyuseStore from "@/lib/zustand";
 import { Navbar } from "@/components/navbar/Navbar";
 import { ShoeBox } from "@/components/shoes/shoebox";
-import { useCartStore } from "@/lib/zustand";
-import React from "react";
-import MyuseStore from "@/lib/zustand";
 
 const Cart = () => {
   const { cartItems, removeFromCart }: any = useCartStore();
   const user = MyuseStore((state) => state.user);
 
-  console.log("items", cartItems);
-
   const handleDelete = (index: number) => {
     removeFromCart(index);
+    showToast();
+  };
+
+  const showToast = () => {
+    toast.success("Item deleted successfully!", {
+      duration: 3000, // milliseconds
+    });
   };
 
   return (
@@ -51,6 +55,7 @@ const Cart = () => {
           ))}
         </div>
       </div>
+      <Toaster position="top-center" />
     </>
   );
 };
