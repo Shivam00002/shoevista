@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 import { LuSun } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
-import MyuseStore from "@/lib/zustand";
+import MyuseStore, { useCartStore } from "@/lib/zustand";
 import { useRouter } from "next/router";
 import { auth } from "@/lib/firebase";
 
@@ -14,11 +14,11 @@ export const Navbar = ({ imgUrl, userName, user }: any) => {
   const [profile, showProfile] = useState(false);
   const router = useRouter();
   const { setUser }: { setUser: (newUser: any) => void } = MyuseStore();
+  const { cartItems }: any = useCartStore();
 
   const handleDaymode = () => {
     setLite(!lite);
   };
-
 
   const handleshowProfile = () => {
     showProfile(!profile);
@@ -37,7 +37,9 @@ export const Navbar = ({ imgUrl, userName, user }: any) => {
   return (
     <div className=" w-full   fixed z-50 top-0 left-0  border-b-2 ">
       <div className="md:w-[80%]  flex items-center justify-between mx-auto w-full  h-14   bg-white">
-        <Link href="/" className="font-bold md:text-[20px]">ShoeVista</Link>
+        <Link href="/" className="font-bold md:text-[20px]">
+          ShoeVista
+        </Link>
 
         <div className="flex     px-2  items-center gap-5">
           {user && (
@@ -49,8 +51,15 @@ export const Navbar = ({ imgUrl, userName, user }: any) => {
             </h2>
           )}
 
-<Link href="/cart"><FaCartPlus size={20} /></Link>
-  
+          <div>
+            <Link className="relative" href="/cart">
+              <FaCartPlus size={20} />
+              <h2 className=" rounded-full absolute w-4 h-4  grid place-content-center -top-2 -right-3  text-[12px] text-white  bg-[#3994ba] font-semibold">
+                {cartItems.length}
+              </h2>
+            </Link>
+          </div>
+
           <div className="cursor-pointer w-5 " onClick={() => handleDaymode()}>
             {lite ? <FaRegMoon size={20} /> : <LuSun size={22} />}
           </div>
