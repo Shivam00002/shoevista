@@ -18,9 +18,17 @@ const MyuseStore = create<Store>((set) => ({
 
 export default MyuseStore;
 
-
- export const useCartStore = create((set) => ({
+export const useCartStore = create((set) => ({
   cartItems: [],
-  addToCart: (item: any) => set((state: { cartItems: any; }) => ({ cartItems: [...state.cartItems, item] })),
-}));
+  addToCart: (item: any) =>
+    set((state: { cartItems: any }) => ({
+      cartItems: [...state.cartItems, item],
+    })),
 
+  removeFromCart: (index: number) =>
+    set((state: any) => {
+      const updatedCartItems = [...state.cartItems];
+      updatedCartItems.splice(index, 1);
+      return { cartItems: updatedCartItems };
+    }),
+}));
