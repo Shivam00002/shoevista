@@ -8,8 +8,9 @@ import { PlatformBox } from "./PlatformBox";
 import { SolutionsBox } from "./SolutionsBox";
 import { MethodBox } from "./MethodBox";
 import TextChange from "./TextChange";
-import { BsArrowRight } from "react-icons/Bs";
+
 import { BoxData, PlateformImages, Solutions } from "./data/ImgData";
+import { BsArrowRight } from "react-icons/Bs";
 
 export const Myhome = () => {
   const [activeTab, setActiveTab] = useState(0);
