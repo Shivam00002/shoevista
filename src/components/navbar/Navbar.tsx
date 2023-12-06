@@ -8,8 +8,9 @@ import Link from "next/link";
 import MyuseStore, { useCartStore } from "@/lib/zustand";
 import { useRouter } from "next/router";
 import { auth } from "@/lib/firebase";
+import { SearchBox } from "./SearchBox";
 
-export const Navbar = ({ imgUrl, userName, user }: any) => {
+export const Navbar = ({ imgUrl, userName, user, onSearch }: any) => {
   const [lite, setLite] = useState(false);
   const [profile, showProfile] = useState(false);
   const router = useRouter();
@@ -40,6 +41,8 @@ export const Navbar = ({ imgUrl, userName, user }: any) => {
         <Link href="/" className="font-bold md:text-[20px]">
           ShoeVista
         </Link>
+
+        <SearchBox onSearch={onSearch} />
 
         <div className="flex     px-2  items-center gap-5">
           {user && (

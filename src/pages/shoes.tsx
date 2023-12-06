@@ -1,5 +1,5 @@
 import { Toaster, toast } from "react-hot-toast";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useCartStore } from "@/lib/zustand";
 import { Navbar } from "@/components/navbar/Navbar";
 import { ShoeBox } from "@/components/shoes/shoebox";
@@ -9,6 +9,8 @@ import { ShoeData } from "../components/home/shoe";
 const Shoe = () => {
   const { cartItems, addToCart }: any = useCartStore();
   const user = MyuseStore((state) => state.user);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredShoes, setFilteredShoes] = useState(ShoeData);
 
   const showToast = (message: string) => {
     toast.success(message, {
@@ -16,14 +18,13 @@ const Shoe = () => {
     });
   };
 
-  const showToast2=( message :string) =>{
+  const showToast2 = (message: string) => {
     toast.error(message, {
       duration: 3000,
     });
-  }
+  };
 
   const handleAddToCart = (el: any) => {
-    // Check if the item is already in the cart
     const isItemInCart = cartItems.some(
       (cartItem: any) => cartItem.title === el.title
     );
@@ -36,12 +37,26 @@ const Shoe = () => {
     }
   };
 
+  const handleSearch = (query: any) => {
+    setSearchQuery(String(query));
+  };
+
+  useEffect(() => {
+    //  console.log("SearchQuery:", searchQuery);
+    const filteredResults = ShoeData.filter((shoe) =>
+      shoe.title.toLowerCase().includes(String(searchQuery).toLowerCase())
+    );
+    //   console.log("FilteredResults:", filteredResults);
+    setFilteredShoes(filteredResults);
+  }, [searchQuery]);
+
   return (
     <>
       <Navbar
         user={user}
         userName={user?.displayName}
         imgUrl={user?.photoURL}
+        onSearch={handleSearch}
       />
       <div className="md:w-[80%] mt-14 flex relative  gap-2 w-full mx-auto ">
         <div className="w-[20%] sticky top-0 h-screen border">
@@ -52,7 +67,7 @@ const Shoe = () => {
         </div>
 
         <div className="w-full grid md:grid-cols-4 grid-cols-2 gap-3">
-          {ShoeData?.map((el, index) => (
+          {filteredShoes?.map((el, index) => (
             <div key={index}>
               <ShoeBox
                 img={el.images.portraitURL}
