@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import { BsArrowLeft, BsArrowRight } from "react-icons/Bs";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const TextChange = () => {
   const [text, setText] = useState(0);
