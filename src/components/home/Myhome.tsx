@@ -8,80 +8,69 @@ import { PlatformBox } from "./PlatformBox";
 import { SolutionsBox } from "./SolutionsBox";
 import { MethodBox } from "./MethodBox";
 import TextChange from "./TextChange";
-
 import { BoxData, PlateformImages, Solutions } from "./data/ImgData";
-import { BsArrowRight } from "react-icons/Bs";
+const Platforms = ["MENS", "WOMENS", "KIDS", "ATHLETIC", "CASUAL"];
+const NavigationTab = [
+  {
+    title: "All Shoes",
+    content: [
+      "Running Shoes",
+      "Casual Shoes",
+      "Formal Shoes",
+      "Sneakers",
+      "Sandals",
+      "Boots",
+    ],
+  },
+  {
+    title: "Men's Shoes",
+    content: [
+      "Running Shoes",
+      "Casual Shoes",
+      "Formal Shoes",
+      "Sneakers",
+      "Boots",
+    ],
+  },
+  {
+    title: "Women's Shoes",
+    content: [
+      "Running Shoes",
+      "Casual Shoes",
+      "Formal Shoes",
+      "Sneakers",
+      "Sandals",
+      "Boots",
+    ],
+  },
+  {
+    title: "Sports Shoes",
+    content: ["Running Shoes", "Sneakers"],
+  },
+  {
+    title: "Sandals",
+    content: ["Casual Sandals", "Formal Sandals", "Sport Sandals"],
+  },
+  {
+    title: "Boots",
+    content: ["Ankle Boots", "Knee-High Boots", "Snow Boots"],
+  },
+  {
+    title: "Slippers",
+    content: ["Indoor Slippers", "Outdoor Slippers"],
+  },
+  {
+    title: "Accessories",
+    content: ["Shoe Care Products", "Insoles", "Laces"],
+  },
+];
+
 
 export const Myhome = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const [showDropdown, setShowDropdown] = useState(false);
-  const Platforms = ["MENS", "WOMENS", "KIDS", "ATHLETIC", "CASUAL"];
-
-  const NavigationTab = [
-    {
-      title: "All Shoes",
-      content: [
-        "Running Shoes",
-        "Casual Shoes",
-        "Formal Shoes",
-        "Sneakers",
-        "Sandals",
-        "Boots",
-      ],
-    },
-    {
-      title: "Men's Shoes",
-      content: [
-        "Running Shoes",
-        "Casual Shoes",
-        "Formal Shoes",
-        "Sneakers",
-        "Boots",
-      ],
-    },
-    {
-      title: "Women's Shoes",
-      content: [
-        "Running Shoes",
-        "Casual Shoes",
-        "Formal Shoes",
-        "Sneakers",
-        "Sandals",
-        "Boots",
-      ],
-    },
-    {
-      title: "Sports Shoes",
-      content: ["Running Shoes", "Sneakers"],
-    },
-    {
-      title: "Sandals",
-      content: ["Casual Sandals", "Formal Sandals", "Sport Sandals"],
-    },
-    {
-      title: "Boots",
-      content: ["Ankle Boots", "Knee-High Boots", "Snow Boots"],
-    },
-    {
-      title: "Slippers",
-      content: ["Indoor Slippers", "Outdoor Slippers"],
-    },
-    {
-      title: "Accessories",
-      content: ["Shoe Care Products", "Insoles", "Laces"],
-    },
-  ];
 
   const handleSelect = (index: React.SetStateAction<number>) => {
     setActiveTab(index);
-  };
-
-  const handleMouseEnter = () => {
-    setShowDropdown(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowDropdown(false);
   };
 
   return (
@@ -180,9 +169,10 @@ export const Myhome = () => {
             );
           })}
         </div>
-        <div className=" grid md:grid-cols-4 grid-cols-2 mt-3 gap-3">
+        <div className=" flex w-full overflow-x-scroll grid-cols-2 mt-3 gap-3">
           {PlateformImages?.map((el, index) => {
             return (
+              
               <Link href={"/shoes"}>
                 <PlatformBox
                   key={index}

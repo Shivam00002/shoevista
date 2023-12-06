@@ -16,7 +16,8 @@ export const Navbar = ({ imgUrl, userName, user, onSearch }: any) => {
   const router = useRouter();
   const { setUser }: { setUser: (newUser: any) => void } = MyuseStore();
   const { cartItems }: any = useCartStore();
-
+  const { asPath } = router;
+  
   const handleDaymode = () => {
     setLite(!lite);
   };
@@ -42,7 +43,7 @@ export const Navbar = ({ imgUrl, userName, user, onSearch }: any) => {
           ShoeVista
         </Link>
 
-        <SearchBox onSearch={onSearch} />
+        {asPath == "/shoes" && <SearchBox onSearch={onSearch} />}
 
         <div className="flex     px-2  items-center gap-5">
           {user && (

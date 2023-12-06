@@ -22,7 +22,24 @@ export const PlateformImages =
             name: "Jordan Super Play"
         },
 
+        {
+            img: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ef8aa287-3fcf-4674-b6ab-f8dd5b98023e/jordan-one-take-4-pf-shoes-v5trdl.png",
+            name: "Nike Air Force 1 '07 LV8"
+        },
+        {
+            img: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/49fe505d-b813-4ec4-b359-e705007a520c/jordan-play-slides-2mCjgT.png",
+            name: "Nike Offcourt Adjust"
+        },
 
+        {
+            img: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/360cc5e1-a404-4a0d-b6a7-b7c415ed4282/jumpman-two-trey-shoes-rhmBzG.png",
+            name: "Jumpman Two Trey"
+        },
+
+        {
+            img: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2b926815-89c8-4ae0-85ad-a7bdb74aa13f/jordan-super-play-slides-Cfj5Q4.png",
+            name: "Jordan Super Play"
+        },
 
     ]
 

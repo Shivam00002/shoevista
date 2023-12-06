@@ -19,7 +19,7 @@ export default function Home() {
       <div className="container  md:max-w-[80%] w-full mx-auto">
         <Navbar user={user} userName={user?.displayName} imgUrl={user?.photoURL} />
         <Myhome />
-        <Checkout />
+        {/* <Checkout /> */}
       </div>
     </div>
   );

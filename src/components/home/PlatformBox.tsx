@@ -3,7 +3,7 @@ import React from "react";
 import { LuEuro } from "react-icons/lu";
 export const PlatformBox = ({ img, toptext, name }: any) => {
   return (
-    <div className="w-full h-fit">
+    <div className="md:w-[300px] w-[180px] h-fit">
       <div className="w-full h-[240px] md:h-[435px]  rounded-md relative ">
         <Image
           src={img}
