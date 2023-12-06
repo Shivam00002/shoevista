@@ -22,7 +22,6 @@ export const Checkout = () => {
                 className="object-cover rounded-sm"
               />
             </div>
-
             <div className="md:w-[485px]   w-[100%]  cursor-pointer h-[350px] md:h-[500px] relative rounded-sm">
               <Image
                 src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1695143809%2Fitem-images%2F6ea064a7-e924-4c31-9e2a-5667f1339e3b.jpg&w=828&q=75"
