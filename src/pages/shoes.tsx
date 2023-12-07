@@ -58,8 +58,8 @@ const Shoe = () => {
         imgUrl={user?.photoURL}
         onSearch={handleSearch}
       />
-      <div className="md:w-[80%] mt-14 flex relative  gap-2 w-full mx-auto ">
-        <div className="w-[20%] sticky top-0 h-screen border">
+      <div className="md:w-[80%]  mt-14 flex relative  gap-2 w-full mx-auto ">
+        <div className="w-[20%] hidden md:block sticky top-0 h-screen border">
           <h3>filter</h3>
           <h3>filter</h3>
           <h3>filter</h3>

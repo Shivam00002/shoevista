@@ -4,12 +4,6 @@ import React from "react";
 import { PiCurrencyInrBold } from "react-icons/pi";
 
 export const ShoeBox = ({ img, toptext, name, price }: any) => {
- 
-
-  
-
-  
-
   return (
     <div className="w-full h-fit">
       <div className="w-full  h-[240px] md:h-[375px]  rounded-md relative ">
@@ -48,8 +42,6 @@ export const ShoeBox = ({ img, toptext, name, price }: any) => {
           <PiCurrencyInrBold color="gray" />
           <p className="text-gray-500">{price}</p>
         </div>
-
-      
       </div>
     </div>
   );
