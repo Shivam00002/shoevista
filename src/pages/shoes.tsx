@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar/Navbar";
 import { ShoeBox } from "@/components/shoes/shoebox";
 import MyuseStore from "@/lib/zustand";
 import { ShoeData } from "../components/home/shoe";
+import { Filter } from "@/components/filter/Filter";
 
 const Shoe = () => {
   const { cartItems, addToCart }: any = useCartStore();
@@ -58,12 +59,10 @@ const Shoe = () => {
         imgUrl={user?.photoURL}
         onSearch={handleSearch}
       />
-      <div className="md:w-[80%]  mt-14 flex relative  gap-2 w-full mx-auto ">
+      <div className="md:w-[80%]  mt-14 md:flex relative  gap-2 w-full mx-auto ">
         <div className="w-[20%] hidden md:block sticky top-0 h-screen border">
-          <h3>filter</h3>
-          <h3>filter</h3>
-          <h3>filter</h3>
-          <h3>filter</h3>
+        
+          <Filter/>
         </div>
 
         <div className="w-full grid md:grid-cols-4 grid-cols-2 gap-3">
@@ -76,17 +75,17 @@ const Shoe = () => {
                 price={el.price.currentPrice}
               />
 
-              <div className="flex items-center -mt-3 gap-x-3">
-                <button className="md:w-[200px] whitespace-normal w-full py-2 bg-[#3994ba] text-white rounded-md text-[15px] text-center cursor-pointer">
+              {/* <div className="flex w items-center -mt-3 gap-x-3">
+                <button className="md:w-[200px]  md:px-0 px-2  whitespace-normal w-fit py-2 bg-[#3994ba] text-white rounded-md text-[15px] text-center cursor-pointer">
                   Buy now
                 </button>
                 <button
                   onClick={() => handleAddToCart(el)}
-                  className="md:w-[200px] w-full py-2 border text-green-900 rounded-md text-[15px] text-center cursor-pointer"
+                  className="md:w-[200px] md:px-0 px-2 w-fit py-2 border text-green-900 rounded-md text-[15px] text-center cursor-pointer"
                 >
                   Add to cart
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
