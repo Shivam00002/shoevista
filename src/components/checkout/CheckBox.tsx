@@ -20,6 +20,7 @@ export const CheckBox = () => {
     }
   };
 
+
   return (
     <div className="md:w-full w-full sticky md:mt-[300px]  h-fit md:h-[500px] rounded-md  ">
       <div className="w-full h-14 px-4 bg-[#C3FF52] flex justify-between items-center ">
