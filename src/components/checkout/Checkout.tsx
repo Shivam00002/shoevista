@@ -8,6 +8,7 @@ import { PlateformImages } from "../home/data/ImgData";
 export const Checkout = () => {
   return (
     <>
+
     
       <div className="md:w-full mx-auto w-full h-full px-2 py-2  md:flex  gap-5">
         <div className="md:w-full w-full h-full ">
