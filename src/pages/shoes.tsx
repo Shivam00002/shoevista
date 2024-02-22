@@ -75,7 +75,7 @@ const Shoe = () => {
                 price={el.price.currentPrice}
               />
 
-              {/* <div className="flex w items-center -mt-3 gap-x-3">
+               <div className="flex w items-center -mt-3 gap-x-3">
                 <button className="md:w-[200px]  md:px-0 px-2  whitespace-normal w-fit py-2 bg-[#3994ba] text-white rounded-md text-[15px] text-center cursor-pointer">
                   Buy now
                 </button>
@@ -85,7 +85,7 @@ const Shoe = () => {
                 >
                   Add to cart
                 </button>
-              </div> */}
+              </div> 
             </div>
           ))}
         </div>
