@@ -20,6 +20,7 @@ export const PlatformBox = ({ img, toptext, name }: any) => {
         <p className="md:text-[18px] text-[14px] md:leading-none leading-[17px] py-2 text-[#307e9f] ">
           {name}
         </p>
+
         <p className="md:text-[11px] text-[10px] text-gray-500">
           COMFORTABLE CHAIRS
         </p>
