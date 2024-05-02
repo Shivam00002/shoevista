@@ -29,6 +29,7 @@ export const Checkout = () => {
                 fill
                 className="object-cover rounded-sm"
               />
+              
             </div>
           </div>
           {/* <div className="md:flex hidden items-center justify-around">
