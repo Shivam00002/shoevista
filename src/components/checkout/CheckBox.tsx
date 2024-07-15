@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { LuEuro } from "react-icons/lu";
 
-export const CheckBox = () => {
-  const [quentity, setQuentity] = useState(0);
+export const CheckBox = ({ price }: any) => {
+  const [quentity, setQuentity] = useState(1);
+  const [currentPrice, setCurrentPrice] = useState(0);
 
   const handleQuentityPlus = () => {
     if (quentity == 5) {
@@ -13,7 +14,7 @@ export const CheckBox = () => {
     }
   };
   const handleQuentityMinus = () => {
-    if (quentity == 0) {
+    if (quentity == 1) {
       return;
     } else {
       setQuentity(quentity - 1);
@@ -31,13 +32,16 @@ export const CheckBox = () => {
         </div>
 
         <h2>
-          11 <span>KG</span>
+          11 <span>%</span>
         </h2>
       </div>
 
       <div className="flex   items-center gap-1">
-        <LuEuro className="md:w-[45px]  md:h-[45px] h-7 w-7" />
-        <h3 className="md:text-[46px] text-[26px] md:mt-0 mt-3  ">150</h3>
+        <p>Price : INR</p>
+        <h3 className="md:text-[35px] text-[2px] md:mt-0 mt-3">
+          {quentity === 0 && 1 ? price : quentity * price}
+        </h3>
+
         <p className="md:text-[10px] text-[8px]  -mt-5 text-gray-500">EX VAT</p>
       </div>
 
@@ -52,7 +56,7 @@ export const CheckBox = () => {
       <div className="flex py-2 items-start gap-1">
         <button
           onClick={() => handleQuentityMinus()}
-          className="px-5 py-3 border cursor-default rounded-md "
+          className="px-5 py-3 border  rounded-md "
         >
           -
         </button>

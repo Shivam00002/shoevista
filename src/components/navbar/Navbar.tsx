@@ -17,7 +17,7 @@ export const Navbar = ({ imgUrl, userName, user, onSearch }: any) => {
   const { setUser }: { setUser: (newUser: any) => void } = MyuseStore();
   const { cartItems }: any = useCartStore();
   const { asPath } = router;
-  
+
   const handleDaymode = () => {
     setLite(!lite);
   };
@@ -38,7 +38,7 @@ export const Navbar = ({ imgUrl, userName, user, onSearch }: any) => {
 
   return (
     <div className=" w-full   fixed z-50 top-0 left-0  border-b-2 ">
-      <div className="md:w-[80%]  flex items-center justify-between mx-auto w-full  h-14   bg-white">
+      <div className="md:max-w-[1280px]  flex items-center justify-between mx-auto w-full  h-14   bg-white">
         <Link href="/" className="font-bold md:text-[20px]">
           ShoeVista
         </Link>

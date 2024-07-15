@@ -20,7 +20,7 @@ export const Filter = () => {
 
       <h2 className="font-semibold text-gray-500 mt-8">Price range</h2>
       <h3>222</h3>
-      <input type="range"  className="w-[200px] mt-2 h-[6px]"/>
+      <input type="range" className="w-[200px] mt-2 h-[6px]" />
     </div>
   );
 };

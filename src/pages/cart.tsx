@@ -27,7 +27,7 @@ const Cart = () => {
         userName={user?.displayName}
         imgUrl={user?.photoURL}
       />
-      <div className="md:w-[80%] h-fit mt-16 border mx-auto ">
+      <div className="md:max-w-[1280px] w-full h-fit mt-16 border mx-auto ">
         <h2>Your Items</h2>
 
         <div className="w-full grid md:grid-cols-4 grid-cols-2 gap-3">

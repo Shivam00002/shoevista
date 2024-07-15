@@ -16,7 +16,6 @@ const MyuseStore = create<Store>((set) => ({
   setUser: (newUser) => set({ user: newUser }),
 }));
 
-
 export default MyuseStore;
 
 export const useCartStore = create((set) => ({

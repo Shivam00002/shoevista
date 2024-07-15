@@ -9,6 +9,7 @@ import { SolutionsBox } from "./SolutionsBox";
 import { MethodBox } from "./MethodBox";
 import TextChange from "./TextChange";
 import { BoxData, PlateformImages, Solutions } from "./data/ImgData";
+import Footer from "../footer/Footer";
 const Platforms = ["MENS", "WOMENS", "KIDS", "ATHLETIC", "CASUAL"];
 const NavigationTab = [
   {
@@ -64,7 +65,6 @@ const NavigationTab = [
     content: ["Shoe Care Products", "Insoles", "Laces"],
   },
 ];
-
 
 export const Myhome = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -172,7 +172,6 @@ export const Myhome = () => {
         <div className=" flex w-full overflow-x-scroll grid-cols-2 mt-3 gap-3">
           {PlateformImages?.map((el, index) => {
             return (
-              
               <Link href={"/shoes"}>
                 <PlatformBox
                   key={index}
@@ -372,6 +371,7 @@ export const Myhome = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div className="">
-      <div className="container  md:max-w-[80%] w-full mx-auto">
+      <div className="container  md:max-w-[1280px] w-full mx-auto">
         <Navbar
           user={user}
           userName={user?.displayName}

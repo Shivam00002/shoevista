@@ -19,7 +19,7 @@ const Shoe = () => {
 
   const handleBuyNow = (id: any) => {
     console.log("myId", id);
-    router.push(`Checkout/${id}`);
+    router.push(`checkout/${id}`);
   };
 
   const showToast = (message: string) => {
