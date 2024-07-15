@@ -4,7 +4,7 @@ import React from "react";
 export const Globe = () => {
   return (
     <>
-      <div className="w-full h-full         ">
+      <div className="w-full h-full  ">
         <div className="md:w-full w-full h-full mx-auto block  md:flex   md:py-10   ">
           <div className="md:w-[50%] w-full  h-fit md:h-[480px] px-4 ">
             <h2 className="md:text-[37px] text-[24px] text-[#3994ba] md:leading-[48px]  ">
@@ -58,18 +58,18 @@ export const Globe = () => {
             </div>
           </div>
 
-          <div className=" md:w-[50%] relative   w-full  hidden    md:grid place-content-center ">
+          <div className=" md:w-[50%] relative   w-full  hidden   md:grid place-content-center ">
             <div className="relative w-full h-full z-20">
-              <div className="w-[120px] h-[120px]  rounded-full  absolute top-[68px] -left-[104px]">
+              <div className="w-[120px] h-[120px]  rounded-full  absolute top-[68px]  -left-[114px]">
                 <div className="">
-                  <div className="w-[100px] h-[100px] hidden md:flex border rounded-full right-[-67px] relative ml-5">
+                  <div className="w-[100px] h-[100px] hidden md:flex border rounded-full right-[-28px] relative ml-5">
                     <Image
                       src="https://thumbs.dreamstime.com/b/walking-world-human-39612159.jpg"
                       alt="small-pro-pic"
                       fill
                       className="rounded-full object-cover"
                     />
-                    <div className=" w-[200px]  top-[254px]  p-1 bg-white  shadow-lg z-30 text-sm md:mb-0 mb-7 w  px-2 absolute rounded-lg ">
+                    <div className=" w-[200px]  top-[274px]  p-1 bg-white  shadow-lg z-30 text-sm md:mb-0 mb-7 w  px-2 absolute rounded-lg ">
                       <p className="text-[13px]  leading-[15px] ">
                         I am excels in crafting efficient, user-centric web
                         applications.
@@ -78,7 +78,7 @@ export const Globe = () => {
                   </div>
                 </div>
 
-                <div className=" w-[165px] h-fit  px-2  py-1 hidden md:flex bg-white shadow-lg  text-black text-sm  top-[84px] rounded-lg absolute  right-[-83px]">
+                <div className=" w-[165px] h-fit  px-2  py-1 hidden md:flex bg-white shadow-lg  text-black text-sm  top-[84px] rounded-lg absolute  right-[-53px]">
                   <p className="text-[13px]  leading-[15px] ">
                     Efficiency and elegance define my{" "}
                     <span className="text-[#4181ac]"> web mastery.</span>
@@ -87,7 +87,7 @@ export const Globe = () => {
               </div>
             </div>
 
-            <div className="md:w-[540px]  md:h-[540px]   w-[350px] h-[350px] left-[20px] md:left-auto   rounded-full flex items-center border-[#390765e8]  absolute  border  rotate md:right-[20px] top-[282px] md:top-[0px]">
+            <div className="md:w-[540px]  md:h-[540px]   w-[350px] h-[350px] left-[20px] md:left-auto   rounded-full flex items-center border-[#390765e8]  absolute  border  rotate md:right-[27px] top-[282px] md:top-[0px]">
               <div className=" rounded-full absolute -top-0 right-0 md:translate-x-[-169px] translate-x-[-225px] ">
                 <div className="md:w-7 md:h-7 w-6 h-6 relative rounded-full ">
                   {" "}
@@ -101,7 +101,7 @@ export const Globe = () => {
               </div>
             </div>
 
-            <div className=" md:px-10 md:py-10 border border-[#390765e8] mx-auto rotate rounded-full mt-[-109px] md:left-[70px]   relative top-[85px]  w-[18em] h-[18em] md:w-[28em] md:h-[28em]">
+            <div className=" md:px-10 md:py-10 border border-[#390765e8] mx-auto rotate rounded-full mt-[-109px] md:left-[26px]   relative top-[85px]  w-[18em] h-[18em] md:w-[28em] md:h-[28em]">
               <div className="  rounded-full absolute md:translate-x-[-48px]   right-[17px]">
                 <div className="md:w-7 md:h-7 w-6 h-6 relative rounded-full ">
                   {" "}

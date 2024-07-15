@@ -49,7 +49,7 @@ export const Navbar = ({ imgUrl, userName, user, onSearch }: any) => {
           {user && (
             <h2 className="md:text-[14px] text-[12px] whitespace-nowrap font-semibold">
               <span className="text-[#3994ba] px-1 md:px-2 font-serif">
-                Welcome @{" "}
+                Welcome {" "}
               </span>
               {userName}
             </h2>
@@ -96,7 +96,7 @@ export const Navbar = ({ imgUrl, userName, user, onSearch }: any) => {
               Logout
             </button>
           ) : (
-            <Link href={"/login"} className="cursor-pointer">
+            <Link href={"/Login"} className="cursor-pointer">
               Login
             </Link>
           )}

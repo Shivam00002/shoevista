@@ -4,10 +4,16 @@ import { useCartStore } from "@/lib/zustand";
 import MyuseStore from "@/lib/zustand";
 import { Navbar } from "@/components/navbar/Navbar";
 import { ShoeBox } from "@/components/shoes/shoebox";
+import { useRouter } from "next/router";
 
 const Cart = () => {
   const { cartItems, removeFromCart }: any = useCartStore();
   const user = MyuseStore((state) => state.user);
+  const router = useRouter();
+
+  const handleNavigate = (id: any) => {
+    router.push(`checkout/${id}`);
+  };
 
   const handleDelete = (index: number) => {
     removeFromCart(index);
@@ -27,8 +33,18 @@ const Cart = () => {
         userName={user?.displayName}
         imgUrl={user?.photoURL}
       />
-      <div className="md:max-w-[1280px] w-full h-fit mt-16 border mx-auto ">
-        <h2>Your Items</h2>
+      <div className="md:max-w-[1280px] w-full h-fit mt-16  mx-auto ">
+        {cartItems.length === 0 ? (
+          <h2 className="md:text-[17px] py-2 px-1 text-sm text-red-500 font-semibold">
+            {" "}
+            Please add your choice{" "}
+          </h2>
+        ) : (
+          <h2 className="md:text-[17px] py-2 px-1 text-sm text-green-500 font-semibold">
+            {" "}
+            Your Items{" "}
+          </h2>
+        )}
 
         <div className="w-full grid md:grid-cols-4 grid-cols-2 gap-3">
           {cartItems?.map((el: any, index: number) => (
@@ -41,7 +57,10 @@ const Cart = () => {
               />
 
               <div className="flex items-center -mt-3 gap-x-3">
-                <button className="md:w-[200px] whitespace-normal w-full py-2 bg-[#3994ba] text-white rounded-md text-[15px] text-center cursor-pointer">
+                <button
+                  onClick={() => handleNavigate(el.id)}
+                  className="md:w-[200px] whitespace-normal w-full py-2 bg-[#3994ba] text-white rounded-md text-[15px] text-center cursor-pointer"
+                >
                   Buy now
                 </button>
                 <button

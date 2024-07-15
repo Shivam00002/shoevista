@@ -72,7 +72,7 @@ export const CheckBox = ({ price }: any) => {
       </div>
 
       <div className="flex items-center gap-3">
-        <div className="md:w-fit w-full px-8 py-2 mt-4 bg-green-400 text-green-900 rounded-md text-[18px]  text-center cursor-pointer">
+        <div className="md:w-full w-full px-8 py-2 mt-4 bg-green-400 text-green-900 rounded-md text-[18px]  text-center cursor-pointer">
           Place Order
         </div>
       </div>
