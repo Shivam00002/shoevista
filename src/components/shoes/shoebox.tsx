@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { PiCurrencyInrBold } from "react-icons/pi";
 
-export const ShoeBox = ({ img, toptext, name, price }: any) => {
+export const ShoeBox = ({ img, toptext, name, price, id }: any) => {
   return (
     <div className="w-full h-fit">
       <div className="w-full    h-[240px] md:h-[375px]  rounded-md relative ">

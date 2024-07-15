@@ -1,20 +1,19 @@
 import Image from "next/image";
 import React from "react";
 import { CheckBox } from "./CheckBox";
-import { SpecificationBox } from "./SpecificationBox";
 import { PlatformBox } from "../home/PlatformBox";
 import { PlateformImages } from "../home/data/ImgData";
 
-export const Checkout = () => {
+export const Check = () => {
   return (
-    <>
-      <div className="md:w-full mx-auto relative w-full h-full px-2 border border-red-600 py-2  md:flex  gap-5">
+    <div className="container  md:max-w-[80%] w-full mx-auto">
+      <div className="md:w-full mx-auto relative w-full h-full px-2 border border-green-500  py-2  md:flex  gap-5">
         <div className="md:w-full w-full h-full ">
-          <h1 className="md:text-[45px] text-[25px] text-green-900">
+          <h1 className="md:text-[45px] text-[20px] text-green-900">
             HAY Orange and white chairs
           </h1>
-          <div className="md:flex md:mt-5 mt-3 border-b-2 pb-5 gap-4">
-            <div className="md:w-[385px]   w-[100%]  cursor-pointer h-[350px] md:h-[400px] relative rounded-sm">
+          <div className="md:flex md:mt-5 mt-3  pb-5 gap-4">
+            <div className="md:w-full   w-[100%]  cursor-pointer h-[300px] md:h-[400px] relative rounded-sm">
               <Image
                 src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1695143809%2Fitem-images%2F6ea064a7-e924-4c31-9e2a-5667f1339e3b.jpg&w=828&q=75"
                 alt="product-img"
@@ -22,7 +21,7 @@ export const Checkout = () => {
                 className="object-cover rounded-sm"
               />
             </div>
-            <div className="md:w-[385px]   w-[100%]  cursor-pointer h-[350px] md:h-[400px] relative rounded-sm">
+            <div className="md:w-full md:mt-0 mt-4  w-[100%]  cursor-pointer h-[300px] md:h-[400px] relative rounded-sm">
               <Image
                 src="https://www.relievefurniture.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Frelieve-image-cloud-store%2Fimage%2Fupload%2Fv1695143809%2Fitem-images%2F6ea064a7-e924-4c31-9e2a-5667f1339e3b.jpg&w=828&q=75"
                 alt="product-img"
@@ -32,26 +31,22 @@ export const Checkout = () => {
               
             </div>
           </div>
-          {/* <div className="md:flex hidden items-center justify-around">
+          <div className="md:flex hidden items-center justify-around">
             <p className="text-[14px] text-green-900">MATERIAL</p>
             <div>
               <p className="text-[14px] text-green-900">COLOR</p>
               <p className="text-[14px] text-green-900">White</p>
             </div>
-          </div> */}
+          </div> 
 
-          {/* <div className=" grid grid-cols-2 md:grid-cols-4 mt-7  gap-2">
-            {[...new Array(4)].map((el, index) => {
-              return <SpecificationBox key={index} />;
-            })}
-          </div> */}
+  
 
-          <div className="md:mt-10 w-ful hit-fit md:py-6 py-3 px-2  border-b-2">
+     <div className="md:mt-10 w-full md:w-fit hit-fit md:py-6 py-3 px-2  border-b-2">
             <p className="text-[14px] text-gray-500 mt-5">DESCRIPTION</p>
             <p className="text-[16px py-2 md:py-4 text-green-900">
               HAY Orange and white chairs on wooden legs
             </p>
-          </div>
+          </div> 
 
           <p className="text-[13px] py-2 md:py-4 text-green-900">LOCATION</p>
           <p>Jabalpur, Madhya Pradesh 482002 India</p>
@@ -73,17 +68,7 @@ export const Checkout = () => {
         </div>
       </div>
 
-      {/* <div className=" md:w-full mx-auto w-full  grid md:grid-cols-4 grid-cols-2 mt-5 border gap-3">
-        {PlateformImages?.map((el, index) => {
-          return (
-            <PlatformBox
-              key={index}
-              img={el.img}
-              toptext="11 KG OF CO2 SAVED"
-            />
-          );
-        })}
-      </div> */}
-    </>
+  
+    </div>
   );
 };

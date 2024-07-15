@@ -20,9 +20,8 @@ export const CheckBox = () => {
     }
   };
 
-
   return (
-    <div className="md:w-full w-full sticky md:mt-[300px]  h-fit md:h-[500px] rounded-md  ">
+    <div className="md:w-[350px] px-2 py-2 w-full sticky  top-40 shadow-lg  h-fit md:h-[500px] rounded-md  ">
       <div className="w-full h-14 px-4 bg-[#C3FF52] flex justify-between items-center ">
         <div>
           <p className="text-[12px] text-green-900">YOUR IMPACT</p>
@@ -69,11 +68,8 @@ export const CheckBox = () => {
       </div>
 
       <div className="flex items-center gap-3">
-        <div className="md:w-fit w-full px-8 py-2 mt-4 bg-green-400 text-green-900 rounded-sm text-[18px]  text-center cursor-pointer">
-          Buy now
-        </div>
-        <div className="md:w-fit w-full px-8 py-2 mt-4 border text-green-900 rounded-sm text-[18px]  text-center cursor-pointer">
-          Add to cart
+        <div className="md:w-fit w-full px-8 py-2 mt-4 bg-green-400 text-green-900 rounded-md text-[18px]  text-center cursor-pointer">
+          Place Order
         </div>
       </div>
       <div className="mt-10 md:block hidden">
