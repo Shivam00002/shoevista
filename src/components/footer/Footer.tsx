@@ -7,8 +7,6 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
-  const form = useRef();
-
   return (
     <div>
       <div className="w-full md:px-10 md:mt-5 px-4 md:py-10 py-6 h-fit md:h-[400px] bg-gray-700">
@@ -51,7 +49,6 @@ const Footer = () => {
             <form>
               <input
                 type="email"
-                name="from_email"
                 placeholder="Email Address"
                 className=" border-2 rounded-md md:w-[250px] md:mt-4 mt-3 w-full h-[35px] px-2"
               />
