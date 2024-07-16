@@ -6,8 +6,9 @@ import { ShoeData } from "../home/shoe";
 export const Check = (props: { iTemid: any }) => {
   const [item, setItem] = useState([]);
 
+ 
   useEffect(() => {
-    const filteredItems = ShoeData.filter((shoe) => shoe.id === props.iTemid);
+    const filteredItems:any = ShoeData.filter((shoe) => shoe.id === props.iTemid);
     setItem(filteredItems);
   }, [props.iTemid]);
 
