@@ -8,6 +8,7 @@ import { FaTwitter } from "react-icons/fa6";
 
 
 
+
 const Footer = () => {
   return (
     <div>
