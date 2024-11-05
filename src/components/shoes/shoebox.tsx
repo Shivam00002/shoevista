@@ -12,6 +12,7 @@ export const ShoeBox = ({ img, toptext, name, price, id }: any) => {
           alt="img"
           fill
           className="object-cover rounded-md"
+
           loading="lazy"
         />
         <div className="absolute top-2 left-2 text-[10px] w-fit py-[2px] rounded-md h-fit bg-[#bae6f8] px-2">
