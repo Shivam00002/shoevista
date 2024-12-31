@@ -13,6 +13,7 @@ export const CheckBox = ({ price }: any) => {
       setQuentity(quentity + 1);
     }
   };
+
   const handleQuentityMinus = () => {
     if (quentity == 1) {
       return;
