@@ -17,7 +17,6 @@ const Footer = () => {
           </h2>
         </div>
 
-
         <div className="grid md:grid-cols-3 grid-cols-1 w-full gap-5 md:gap-9 py-4  mt-5 md:mt-10 ">
           <div>
             <p className="font-semibold text-white">Address</p>
