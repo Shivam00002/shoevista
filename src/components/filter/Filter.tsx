@@ -19,6 +19,7 @@ export const Filter = () => {
         <option value="">Select</option>
         <option value="high-to-low">High to low</option>
         <option value="Low-to-high">Low to high</option>
+
       </select>
 
       <h2 className="font-semibold text-gray-500 mt-8">Price range</h2>
