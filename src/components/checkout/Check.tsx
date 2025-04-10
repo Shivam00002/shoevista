@@ -17,6 +17,7 @@ export const Check = (props: { iTemid: any }) => {
     console.log(el.images);
   });
 
+
   return (
     <div className="container md:max-w-[1280px] w-full mx-auto">
       {item.map((el: any) => {
