@@ -10,6 +10,7 @@ const firebaseConfig = {
   storageBucket: "shoevista-58bcf.appspot.com",
   messagingSenderId: "385119924624",
   appId: "1:385119924624:web:e94744b863602ead000315",
+
   measurementId: "G-0QK8X7NWYG",
 };
 
