@@ -21,6 +21,7 @@ const Footer = () => {
             <p className="font-semibold text-white">Address</p>
             <p className="text-[#3994ba] text-sm">Contact us</p>
 
+
             <p className="text-white  text-sm">2, 1st Floor, Road No 7,</p>
             <p className="text-white  text-sm">118, Vethadhri Nagar</p>
             <p className="text-white  text-sm">Chengicherla</p>
