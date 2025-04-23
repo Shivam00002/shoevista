@@ -5,6 +5,7 @@ export const Filter = () => {
    const [data , setData] = useState(true)
   
 
+
   return (
     <div className="mt-20 px-2">
       <h2 className="font-semibold text-gray-500">Color</h2>
