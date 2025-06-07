@@ -7,6 +7,7 @@ interface User {
 }
 
 
+
 interface Store {
   user: User | null;
   setUser: (newUser: User | null) => void;
