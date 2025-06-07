@@ -6,6 +6,7 @@ interface User {
   // Add other properties as needed
 }
 
+
 interface Store {
   user: User | null;
   setUser: (newUser: User | null) => void;
