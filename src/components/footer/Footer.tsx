@@ -7,8 +7,6 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 
 
-
-
 const Footer = () => {
   return (
     <div>
