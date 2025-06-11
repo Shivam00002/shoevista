@@ -15,6 +15,7 @@ export const Filter = () => {
       <InputBox color="gray" />
 
 
+
       <h2 className="font-semibold text-gray-500 mt-8">Price</h2>
       <select className="w-[200px]  mt-2 h-fit" name="" id="">
         <option value="">Select</option>
