@@ -13,6 +13,7 @@ interface Store {
   setUser: (newUser: User | null) => void;
 }
 
+
 const MyuseStore = create<Store>((set) => ({
   user: null,
   setUser: (newUser) => set({ user: newUser }),
