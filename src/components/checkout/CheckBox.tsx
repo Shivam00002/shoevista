@@ -6,6 +6,7 @@ export const CheckBox = ({ price }: any) => {
   const [quentity, setQuentity] = useState(1);
   const [currentPrice, setCurrentPrice] = useState(0);
 
+
   const handleQuentityPlus = () => {
     if (quentity == 5) {
       return;
